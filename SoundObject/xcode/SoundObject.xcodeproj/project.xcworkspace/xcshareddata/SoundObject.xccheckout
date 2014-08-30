@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>519F9B86-E9E0-4DE8-95BD-6561B1390528</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SoundObject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1D1EFAEC-2687-49A8-A037-09E8167AAF21</key>
+		<string>ssh://github.com/q-depot/RavensbourneWorkshop.git</string>
+		<key>87455A8D-10B2-41F7-A4C8-54E34B591A13</key>
+		<string>ssh://github.com/q-depot/ciXtract.git</string>
+		<key>92541B42-E9D9-4DC2-861B-749AD1063B17</key>
+		<string>ssh://github.com/q-depot/LibXtract.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SoundObject/xcode/SoundObject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1D1EFAEC-2687-49A8-A037-09E8167AAF21</key>
+		<string>../../../..</string>
+		<key>87455A8D-10B2-41F7-A4C8-54E34B591A13</key>
+		<string>../../../../../blocks/ciXtract</string>
+		<key>92541B42-E9D9-4DC2-861B-749AD1063B17</key>
+		<string>../../../../../blocks/ciXtract/src/LibXtract</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/q-depot/RavensbourneWorkshop.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1D1EFAEC-2687-49A8-A037-09E8167AAF21</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>87455A8D-10B2-41F7-A4C8-54E34B591A13</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ciXtract</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>92541B42-E9D9-4DC2-861B-749AD1063B17</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LibXtract</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1D1EFAEC-2687-49A8-A037-09E8167AAF21</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RavensbourneWorkshop</string>
+		</dict>
+	</array>
+</dict>
+</plist>

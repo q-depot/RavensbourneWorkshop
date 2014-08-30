@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		784ECF1A134948DE90FDC31B /* xtract_vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0380C4DFD345432D8E6AC357 /* xtract_vector.h */; };
+		83045EA4CBA1483E92703A31 /* xtract_types.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1B1BF3D38D43EB92E45C63 /* xtract_types.h */; };
+		4DCD46E490514AF48D303E64 /* xtract_scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0972F50FDA6C49DBA35520D3 /* xtract_scalar.h */; };
+		0D71FBBBF44A4AB9A3E86096 /* xtract_macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F4C486D87A4F91B892D606 /* xtract_macros.h */; };
+		C0855790EE8147EFAFDADC5E /* xtract_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6562A49B1EAB40B09E39BE16 /* xtract_helper.h */; };
+		024F07D5E7954FAE87190212 /* xtract_delta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D99D00DD7C540EFBDCC6829 /* xtract_delta.h */; };
+		92AB7631F07D4FD2A8D01740 /* libxtract.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C091CA58264A55A9C89812 /* libxtract.h */; };
+		58D5BB4866B341A4A1572A89 /* dywapitchtrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 234253BBFA4D4C7BBC3F3A62 /* dywapitchtrack.h */; };
+		FDF14E740AA947CA960A8FE5 /* xtract_window_private.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F5F22E52F24637B2513960 /* xtract_window_private.h */; };
+		28AA2AF83B814FE885762150 /* xtract_macros_private.h in Headers */ = {isa = PBXBuildFile; fileRef = CE66C02574CB4C5299D483A7 /* xtract_macros_private.h */; };
+		35880B5C4B22454F8D7BF297 /* xtract_globals_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F0F2B5E9074D01B68A3655 /* xtract_globals_private.h */; };
+		D516F0224AC14951BC633FEE /* fft.h in Headers */ = {isa = PBXBuildFile; fileRef = B39BC51455AC4B4CB648351B /* fft.h */; };
+		64A5B2588586422D9A4529E5 /* ciXtractFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 897ADF3AEF274F76BE3D1596 /* ciXtractFeature.h */; };
+		C1F6F8D11E984E1AB65CE0AB /* ciXtract.h in Headers */ = {isa = PBXBuildFile; fileRef = 196408C0F2934C168719B0A8 /* ciXtract.h */; };
+		6CE800B6865F473C9B321C61 /* dywapitchtrack.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1D4EC2746F441FB0266E76 /* dywapitchtrack.c */; };
+		FB3315E6CEFB48B68B6EB5A9 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D932D7C7CF34FAB98AD45A7 /* window.c */; };
+		65BFDA213E0F4784B1920DBD /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = FF5202082B5B4FBDAFB5DAA1 /* vector.c */; };
+		CEB9CD8409E547678A0AD47A /* scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = F4FB58BBD2AF441198D289CE /* scalar.c */; };
+		BA0597A85901476E9D990A03 /* libxtract.c in Sources */ = {isa = PBXBuildFile; fileRef = E70C5DB8A3264D0CBB55E565 /* libxtract.c */; };
+		7D6F2CDD7DD64AF3B63C1225 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = B4DC610CC5BF45B9A7F0C1E1 /* init.c */; };
+		7E521324C5934F2BA08C6B9C /* helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BB91D5020F64838AA8BE3C6 /* helper.c */; };
+		FF359F256B074F6ABFAD3257 /* fini.c in Sources */ = {isa = PBXBuildFile; fileRef = 76C943C5FF714CD3AB816B30 /* fini.c */; };
+		B3D0D8437D004FF59658E99B /* descriptors.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B2407974487486DAD77F595 /* descriptors.c */; };
+		EAAEF074529F4DF2BE233062 /* delta.c in Sources */ = {isa = PBXBuildFile; fileRef = 302487104D754BB399DC5E73 /* delta.c */; };
+		CF994E044CDC4B8393800642 /* ciXtractFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B65C21BC62C49C18EDA725D /* ciXtractFeature.cpp */; };
+		30FAB72108C04F4F831D310D /* ciXtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA4F88C42F1B4DA5947F2BEF /* ciXtract.cpp */; };
+		5CF4C24AE08748E09B62FAAC /* SoundCircles_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C55F54127DFE4EED8666617B /* SoundCircles_Prefix.pch */; };
+		B16820F0A8154ED9B36363BE /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9C641A2270FD4F97944D95C9 /* CinderApp.icns */; };
+		C1DAF38052014EB99E240A82 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DEF714176924F079FDE8E11 /* Resources.h */; };
+		45189F1AFBBB424889C6B578 /* SoundCirclesApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52695DA5C7AB4F169EA1FECA /* SoundCirclesApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* SoundCircles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCircles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52695DA5C7AB4F169EA1FECA /* SoundCirclesApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/SoundCirclesApp.cpp; sourceTree = "<group>"; name = SoundCirclesApp.cpp; };
+		2DEF714176924F079FDE8E11 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		9C641A2270FD4F97944D95C9 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		AFC7A1D865E54926AD33E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		C55F54127DFE4EED8666617B /* SoundCircles_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = SoundCircles_Prefix.pch; sourceTree = "<group>"; name = SoundCircles_Prefix.pch; };
+		EA4F88C42F1B4DA5947F2BEF /* ciXtract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../blocks/ciXtract/src/ciXtract.cpp; sourceTree = "<group>"; name = ciXtract.cpp; };
+		6B65C21BC62C49C18EDA725D /* ciXtractFeature.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../blocks/ciXtract/src/ciXtractFeature.cpp; sourceTree = "<group>"; name = ciXtractFeature.cpp; };
+		302487104D754BB399DC5E73 /* delta.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/delta.c; sourceTree = "<group>"; name = delta.c; };
+		2B2407974487486DAD77F595 /* descriptors.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/descriptors.c; sourceTree = "<group>"; name = descriptors.c; };
+		76C943C5FF714CD3AB816B30 /* fini.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/fini.c; sourceTree = "<group>"; name = fini.c; };
+		0BB91D5020F64838AA8BE3C6 /* helper.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/helper.c; sourceTree = "<group>"; name = helper.c; };
+		B4DC610CC5BF45B9A7F0C1E1 /* init.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/init.c; sourceTree = "<group>"; name = init.c; };
+		E70C5DB8A3264D0CBB55E565 /* libxtract.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/libxtract.c; sourceTree = "<group>"; name = libxtract.c; };
+		F4FB58BBD2AF441198D289CE /* scalar.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/scalar.c; sourceTree = "<group>"; name = scalar.c; };
+		FF5202082B5B4FBDAFB5DAA1 /* vector.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/vector.c; sourceTree = "<group>"; name = vector.c; };
+		0D932D7C7CF34FAB98AD45A7 /* window.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/window.c; sourceTree = "<group>"; name = window.c; };
+		FE1D4EC2746F441FB0266E76 /* dywapitchtrack.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../../../blocks/ciXtract/src/LibXtract/src/dywapitchtrack/dywapitchtrack.c; sourceTree = "<group>"; name = dywapitchtrack.c; };
+		196408C0F2934C168719B0A8 /* ciXtract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/ciXtract.h; sourceTree = "<group>"; name = ciXtract.h; };
+		897ADF3AEF274F76BE3D1596 /* ciXtractFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/ciXtractFeature.h; sourceTree = "<group>"; name = ciXtractFeature.h; };
+		B39BC51455AC4B4CB648351B /* fft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/src/fft.h; sourceTree = "<group>"; name = fft.h; };
+		24F0F2B5E9074D01B68A3655 /* xtract_globals_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/src/xtract_globals_private.h; sourceTree = "<group>"; name = xtract_globals_private.h; };
+		CE66C02574CB4C5299D483A7 /* xtract_macros_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/src/xtract_macros_private.h; sourceTree = "<group>"; name = xtract_macros_private.h; };
+		C9F5F22E52F24637B2513960 /* xtract_window_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/src/xtract_window_private.h; sourceTree = "<group>"; name = xtract_window_private.h; };
+		234253BBFA4D4C7BBC3F3A62 /* dywapitchtrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/src/dywapitchtrack/dywapitchtrack.h; sourceTree = "<group>"; name = dywapitchtrack.h; };
+		34C091CA58264A55A9C89812 /* libxtract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/libxtract.h; sourceTree = "<group>"; name = libxtract.h; };
+		3D99D00DD7C540EFBDCC6829 /* xtract_delta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/xtract_delta.h; sourceTree = "<group>"; name = xtract_delta.h; };
+		6562A49B1EAB40B09E39BE16 /* xtract_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/xtract_helper.h; sourceTree = "<group>"; name = xtract_helper.h; };
+		85F4C486D87A4F91B892D606 /* xtract_macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/xtract_macros.h; sourceTree = "<group>"; name = xtract_macros.h; };
+		0972F50FDA6C49DBA35520D3 /* xtract_scalar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/xtract_scalar.h; sourceTree = "<group>"; name = xtract_scalar.h; };
+		CA1B1BF3D38D43EB92E45C63 /* xtract_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/xtract_types.h; sourceTree = "<group>"; name = xtract_types.h; };
+		0380C4DFD345432D8E6AC357 /* xtract_vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../blocks/ciXtract/src/LibXtract/xtract/xtract_vector.h; sourceTree = "<group>"; name = xtract_vector.h; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				52695DA5C7AB4F169EA1FECA /* SoundCirclesApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SoundCircles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SoundCircles */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = SoundCircles;
+			sourceTree = "<group>";
+		};
+		26E3C66CA03C4C0493506165 /* dywapitchtrack */ = {
+			isa = PBXGroup;
+			children = (
+				FE1D4EC2746F441FB0266E76 /* dywapitchtrack.c */,
+				234253BBFA4D4C7BBC3F3A62 /* dywapitchtrack.h */,
+			);
+			name = dywapitchtrack;
+			sourceTree = "<group>";
+		};
+		E18D928BD1E34F7EAEC5059A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				302487104D754BB399DC5E73 /* delta.c */,
+				2B2407974487486DAD77F595 /* descriptors.c */,
+				76C943C5FF714CD3AB816B30 /* fini.c */,
+				0BB91D5020F64838AA8BE3C6 /* helper.c */,
+				B4DC610CC5BF45B9A7F0C1E1 /* init.c */,
+				E70C5DB8A3264D0CBB55E565 /* libxtract.c */,
+				F4FB58BBD2AF441198D289CE /* scalar.c */,
+				FF5202082B5B4FBDAFB5DAA1 /* vector.c */,
+				0D932D7C7CF34FAB98AD45A7 /* window.c */,
+				26E3C66CA03C4C0493506165 /* dywapitchtrack */,
+				B39BC51455AC4B4CB648351B /* fft.h */,
+				24F0F2B5E9074D01B68A3655 /* xtract_globals_private.h */,
+				CE66C02574CB4C5299D483A7 /* xtract_macros_private.h */,
+				C9F5F22E52F24637B2513960 /* xtract_window_private.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		16B7AB0216DE49D9BE8BE305 /* xtract */ = {
+			isa = PBXGroup;
+			children = (
+				34C091CA58264A55A9C89812 /* libxtract.h */,
+				3D99D00DD7C540EFBDCC6829 /* xtract_delta.h */,
+				6562A49B1EAB40B09E39BE16 /* xtract_helper.h */,
+				85F4C486D87A4F91B892D606 /* xtract_macros.h */,
+				0972F50FDA6C49DBA35520D3 /* xtract_scalar.h */,
+				CA1B1BF3D38D43EB92E45C63 /* xtract_types.h */,
+				0380C4DFD345432D8E6AC357 /* xtract_vector.h */,
+			);
+			name = xtract;
+			sourceTree = "<group>";
+		};
+		2E7C639DFB204CF2A8A05207 /* LibXtract */ = {
+			isa = PBXGroup;
+			children = (
+				E18D928BD1E34F7EAEC5059A /* src */,
+				16B7AB0216DE49D9BE8BE305 /* xtract */,
+			);
+			name = LibXtract;
+			sourceTree = "<group>";
+		};
+		255516CBA2A24F67BC057C0D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA4F88C42F1B4DA5947F2BEF /* ciXtract.cpp */,
+				6B65C21BC62C49C18EDA725D /* ciXtractFeature.cpp */,
+				2E7C639DFB204CF2A8A05207 /* LibXtract */,
+				196408C0F2934C168719B0A8 /* ciXtract.h */,
+				897ADF3AEF274F76BE3D1596 /* ciXtractFeature.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		A4D470239BFD4AC3956706EA /* ciXtract */ = {
+			isa = PBXGroup;
+			children = (
+				255516CBA2A24F67BC057C0D /* src */,
+			);
+			name = ciXtract;
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D470239BFD4AC3956706EA /* ciXtract */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2DEF714176924F079FDE8E11 /* Resources.h */,
+				C55F54127DFE4EED8666617B /* SoundCircles_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C641A2270FD4F97944D95C9 /* CinderApp.icns */,
+				AFC7A1D865E54926AD33E2F9 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SoundCircles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SoundCircles" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCircles;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SoundCircles;
+			productReference = 8D1107320486CEB800E47090 /* SoundCircles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SoundCircles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SoundCircles */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SoundCircles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16820F0A8154ED9B36363BE /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45189F1AFBBB424889C6B578 /* SoundCirclesApp.cpp in Sources */,
+				30FAB72108C04F4F831D310D /* ciXtract.cpp in Sources */,
+				CF994E044CDC4B8393800642 /* ciXtractFeature.cpp in Sources */,
+				EAAEF074529F4DF2BE233062 /* delta.c in Sources */,
+				B3D0D8437D004FF59658E99B /* descriptors.c in Sources */,
+				FF359F256B074F6ABFAD3257 /* fini.c in Sources */,
+				7E521324C5934F2BA08C6B9C /* helper.c in Sources */,
+				7D6F2CDD7DD64AF3B63C1225 /* init.c in Sources */,
+				BA0597A85901476E9D990A03 /* libxtract.c in Sources */,
+				CEB9CD8409E547678A0AD47A /* scalar.c in Sources */,
+				65BFDA213E0F4784B1920DBD /* vector.c in Sources */,
+				FB3315E6CEFB48B68B6EB5A9 /* window.c in Sources */,
+				6CE800B6865F473C9B321C61 /* dywapitchtrack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SoundCircles_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = SoundCircles;
+				WRAPPER_EXTENSION = app;
+				SYMROOT = ./build;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SoundCircles_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = SoundCircles;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+				SYMROOT = ./build;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = "../../..";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../../../blocks/ciXtract/src,
+					../../../blocks/ciXtract/src/LibXtract/xtract,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = "../../..";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../../../blocks/ciXtract/src,
+					../../../blocks/ciXtract/src/LibXtract/xtract,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SoundCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SoundCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

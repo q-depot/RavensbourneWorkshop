@@ -1,0 +1,145 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{74C1334C-6DAB-4EBB-A5E6-FB5840A47628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract">
+      <UniqueIdentifier>{B2D2C387-61D1-42C0-B3E8-500990DD7300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract\src">
+      <UniqueIdentifier>{92BDAECC-1BD9-4A81-8D20-87886B5AFE51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract\src\LibXtract">
+      <UniqueIdentifier>{A2D8B054-29AB-4DA0-9A03-C8810313C515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract\src\LibXtract\src">
+      <UniqueIdentifier>{837C631D-BC81-42AB-941B-E7B664BBF8E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract\src\LibXtract\src\dywapitchtrack">
+      <UniqueIdentifier>{A2A7115F-E879-4077-991D-80D47B94B656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract\src\LibXtract\xtract">
+      <UniqueIdentifier>{0B5412B1-20C3-4F64-AAC9-46747EB83BA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ciXtract\src\LibXtract\src\ooura">
+      <UniqueIdentifier>{F081FC58-868C-4735-8130-BF54A8544817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\SoundCirclesApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SoundCirclesApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\ciXtract.cpp">
+      <Filter>Blocks\ciXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\ciXtractFeature.cpp">
+      <Filter>Blocks\ciXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\delta.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\descriptors.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\fini.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\helper.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\init.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\libxtract.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\scalar.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\vector.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\window.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\dywapitchtrack\dywapitchtrack.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src\dywapitchtrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\ciXtract.h">
+      <Filter>Blocks\ciXtract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\ciXtractFeature.h">
+      <Filter>Blocks\ciXtract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\fft.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\xtract_globals_private.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\xtract_macros_private.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\xtract_window_private.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\dywapitchtrack\dywapitchtrack.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\src\dywapitchtrack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\libxtract.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_delta.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_helper.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_macros.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_scalar.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_types.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_vector.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\xtract</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\ooura\fftsg.c">
+      <Filter>Blocks\ciXtract\src\LibXtract\src\ooura</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\ooura\fftsg.h">
+      <Filter>Blocks\ciXtract\src\LibXtract\src\ooura</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

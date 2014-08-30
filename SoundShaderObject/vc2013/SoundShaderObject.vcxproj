@@ -1,0 +1,144 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A568552-47C2-4797-A2D5-4743761CE89E}</ProjectGuid>
+    <RootNamespace>SoundShaderObject</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\\include";"..\..\..\\boost";..\..\..\blocks\ciXtract\src;..\..\..\blocks\ciXtract\src\LibXtract\xtract</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\\include";"..\..\..\\boost";..\..\..\blocks\ciXtract\src;..\..\..\blocks\ciXtract\src\LibXtract\xtract</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\SoundShaderObjectApp.cpp" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\ciXtract.cpp" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\ciXtractFeature.cpp" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\delta.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\descriptors.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\fini.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\helper.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\init.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\libxtract.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\scalar.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\vector.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\window.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\dywapitchtrack\dywapitchtrack.c" />
+    <ClCompile Include="..\..\..\blocks\ciXtract\src\LibXtract\src\ooura\fftsg.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\ciXtract.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\ciXtractFeature.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\fft.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\xtract_globals_private.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\xtract_macros_private.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\xtract_window_private.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\dywapitchtrack\dywapitchtrack.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\libxtract.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_delta.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_helper.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_macros.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_scalar.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_types.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\xtract\xtract_vector.h" />
+    <ClInclude Include="..\..\..\blocks\ciXtract\src\LibXtract\src\ooura\fftsg.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
