@@ -51,6 +51,9 @@ public:
     
     vector<Particle>            mParticles;
     float                       mMinDist;
+    float                       mRadius;
+    float                       mSpeed;
+    int                         mParticlesN;
     
     params::InterfaceGlRef      mParams;
     float                       mFps;
@@ -69,6 +72,9 @@ void SoundCirclesApp::setup()
     mBarkOffset     = 0.0f;
     mBarkDamping    = 0.95f;
     mMinDist        = 100.0f;
+    mRadius         = 100.0f;
+    mSpeed          = 1.0f;
+    mParticlesN     = 50;
     
     mParams = params::InterfaceGl::create( "params", Vec2i( 200, 250 ) );
     mParams->addParam( "FPS",  &mFps );
@@ -78,6 +84,9 @@ void SoundCirclesApp::setup()
     mParams->addParam( "Bark damping",  &mBarkDamping,  "min=0.7 max=0.99 step=0.01" );
     mParams->addSeparator();
     mParams->addParam( "Min dist.",     &mMinDist,      "min=0.0 max=1000.0 step=1.0" );
+    mParams->addParam( "Radius",        &mRadius,       "min=0.0 max=1000.0 step=1.0" );
+    mParams->addParam( "Speed",         &mSpeed,        "min=0.0 max=10.0 step=0.1" );
+    mParams->addParam( "Particles N",   &mParticlesN,   "min=0 max=" + to_string(mParticlesN*2) );
     
     // initialise Xtract
     mXtract = ciXtract::create();
@@ -91,7 +100,7 @@ void SoundCirclesApp::setup()
     
     initAudio();
     
-    for( int k=0; k < 50; k++ )
+    for( int k=0; k < mParticlesN*2; k++ )
     {
         Particle p;
         p.angle         = randFloat( toRadians(360.0f) );
@@ -175,10 +184,10 @@ void SoundCirclesApp::updateParticles()
 {
     shared_ptr<double>  data    = mBark->getResults();
     
-    for( size_t k=0; k < mParticles.size(); k++ )
+    for( size_t k=0; k < mParticlesN; k++ )
     {
-        mParticles[k].angle += mParticles[k].vel;
-        mParticles[k].radius = mParticles[k].initRadius * ( 1.0f + data.get()[ k % mBark->getResultsN() ] );
+        mParticles[k].angle += mParticles[k].vel * mSpeed;
+        mParticles[k].radius = mParticles[k].initRadius + ( mRadius * data.get()[ k % mBark->getResultsN() ] );
     }
 }
 
@@ -193,12 +202,13 @@ void SoundCirclesApp::drawParticles()
     float   dist;
     ColorA  col = ColorA::white();
     
-    for( size_t k=0; k < mParticles.size(); k++ )
+    for( size_t k=0; k < mParticlesN; k++ )
     {
         gl::color( mParticles[k].col );
         posA = Vec2f( cos( mParticles[k].angle ), sin( mParticles[k].angle ) ) * mParticles[k].radius;
         gl::drawStrokedCircle( posA, mParticles[k].size );
-        for( size_t i=0; i < mParticles.size(); i++ )
+
+        for( size_t i=0; i < mParticlesN; i++ )
         {
             if ( k == i )
                 continue;
